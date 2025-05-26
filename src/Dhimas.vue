@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import Navbar from './components/Navbar.vue'
 </script>
 <template>
-	<Navbar style="text-align: center"/>
+	<Navbar/>
 	<RouterView/>
 </template>
 <style scoped>
