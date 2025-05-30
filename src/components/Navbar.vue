@@ -1,25 +1,25 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router';
+import { RouterLink} from 'vue-router';
 </script>
 <template>
-	<nav class="grid grid-cols-3 py-4 px-9">
+	<nav class="hidden md:grid grid-cols-3 py-4 px-9">
 		<div class="bg-white p-2 rounded-md">
 			<img src="" alt="Logo">
 		</div>
 		<div class="content-center text-center">
-			<RouterLink class="p-2 text-black rounded-md" to="/">Features</RouterLink>
-			<RouterLink class="p-2 text-black rounded-md" to="about">Solutions</RouterLink>
-			<RouterLink class="p-2 text-black rounded-md" to="about">Resources</RouterLink>
-			<RouterLink class="p-2 text-black rounded-md" to="about">Pricing</RouterLink>
+			<a href="#feature" class="p-2 text-black rounded-md">Features</a>
+			<a class="p-2 text-black rounded-md">Solutions</a>
+			<a class="p-2 text-black rounded-md">Resources</a>
+			<a class="p-2 text-black rounded-md">Pricing</a>
 		</div>
 		<div class="flex justify-end">
-			<p class="py-2 px-5">Sign in</p>
-			<RouterLink class="py-2 px-5 border rounded-xl border-gray-400">Get Demo</RouterLink>
+			<a href="" class="py-2 px-5">Sign in</a>
+			<a class="py-2 px-5 border rounded-xl border-gray-400">Get Demo</a>
 		</div>
 	</nav>
 </template>
 <style scoped>
-nav RouterLink {
+nav a {
 	margin: 12px;
 	text-decoration: none;
 	color: black;
